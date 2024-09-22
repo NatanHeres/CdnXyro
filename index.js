@@ -33,7 +33,7 @@ app.use(express.static('public'));
 app.use(morgan('dev'));
 
 app.get('/', (req, res) => {
-	res.json({ Nothing Here, Touch Some Grass, BAKA! })
+	res.send('Nothing Here, Go Back And Touch Some Grass')
 });
 
 app.use('/upload', upload);
