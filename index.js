@@ -33,7 +33,7 @@ app.use(express.static('public'));
 app.use(morgan('dev'));
 
 app.get('/', (req, res) => {
-	res.send('Nothing Here, Go Back And Touch Some Grass')
+	res.sendFile(process.cwd() + '/public/index.html');
 });
 
 app.use('/upload', upload);
